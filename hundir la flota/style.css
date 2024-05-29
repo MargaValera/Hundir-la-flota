@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  min-height: 100svh;
+  background-color: rgb(8, 8, 19);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tablero {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.casilla {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: rgb(60, 60, 60);
+  cursor: pointer;
+}
+.casilla:hover {
+  border: 2px solid rgb(232, 232, 127);
+}
+
+.agua {
+  background-color: rgb(35, 247, 247);
+  cursor: default;
+}
+.barco {
+  background-color: rgb(3, 141, 95);
+  cursor: default;
+}
+
+.agua,
+.barco:hover {
+  border: none;
+}
+
+.hundido {
+  background-color: rgb(194, 53, 53);
+}
+
+.oportunidades {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: whitesmoke;
+}

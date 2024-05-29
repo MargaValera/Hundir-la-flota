@@ -1,0 +1,44 @@
+.tablero {
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.casilla {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: rgb(60, 60, 60);
+  cursor: pointer;
+}
+.casilla:hover {
+  border: 2px solid rgb(232, 232, 127);
+}
+
+.agua {
+  background-color: rgb(35, 247, 247);
+  cursor: default;
+}
+.barco {
+  background-color: rgb(3, 141, 95);
+  cursor: default;
+}
+
+.agua,
+.barco:hover {
+  border: none;
+}
+
+.hundido {
+  background-color: rgb(194, 53, 53);
+}
+
+.oportunidades {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: whitesmoke;
+}
